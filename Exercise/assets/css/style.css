@@ -178,3 +178,149 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+#badgeNone{
+    display: none;
+}
+
+/* Media Queries per Tablet (768px e superiori) */
+@media screen and (min-width: 768px){
+    body {
+        font-size: 1.6rem; 
+        line-height: 1.7;
+    }
+    header nav ul {
+        text-align: center; 
+        margin: 0; 
+        padding: 0; 
+    }
+    header nav li {
+        display: inline-block; 
+        margin: 0 15px; 
+        padding: 0; 
+    }
+    #badgeNone{
+        display: block; 
+        box-shadow:
+            0 0 0 2px #0000FF,   
+            0 0 0 4px #FF0000;  
+            margin-top: 10px;
+            margin-bottom: 10px;
+    }
+    table{
+        width: 100%;
+        max-width: 500px;
+        margin: 50px auto 50px;
+    }
+    h2 {
+        font-weight: 700; 
+    }
+}
+
+/* Media Queries per Tablet (1200px e superiori) */
+@media screen and (min-width: 1200px){
+    body{
+        margin: 0 3em;
+    }
+    header {
+        padding: 1em 3em; 
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    header div {
+        float: left; 
+        white-space: nowrap; 
+    }
+     header div img {
+        width: 150px; 
+        height: auto;
+        margin-bottom: 0;
+        margin-right: 15px; 
+        display: inline-block;
+        vertical-align: middle;
+    }
+     header div p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    header nav {
+        float: right; 
+        margin-right: 0; 
+    }
+    h1 {
+        font-size: 4.5rem; 
+         
+    }
+    #badgeNone{
+        display: block; 
+        box-shadow:
+            0 0 0 2px #0000FF,   
+            0 0 0 4px #FF0000;  
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    table{
+        width: 100%;
+        max-width: 900px;
+        margin: 100px auto 100px
+    }
+    .half{
+        display: inline-block;
+        width: 48%;
+        height: 300px;
+        vertical-align: top;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    .novita{
+        background: linear-gradient(to right, #f0f0f0, #a0a0a0);
+        margin-bottom: 50px;
+    }
+   #form{
+    margin-top: 100px;
+    }
+    #form input{
+        width: 80%;
+        height: 50px;
+    }
+    #form button{
+        height: 50px;
+        width: 100px;
+    }
+    aside h2{
+        font-size: 2.2em;
+        margin: 1em auto;
+    }
+    .articles{
+        width: 33%;
+        display: inline-block;
+    }
+    main{
+        margin-left: 10px;
+    }
+    footer p{
+        
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+}
+
+/* QUERY PER  LA STAMPA */
+@media print {
+    body{
+        background: none;  
+        font-size :1.5rem;
+    }
+    header, aside, section, footer, iframe {
+        display: none;
+    }
+    #badgeNone{
+        display: inline-block; 
+        float: left;
+      
+    }
+   
+}
