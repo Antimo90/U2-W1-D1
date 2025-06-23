@@ -318,7 +318,7 @@ footer a {
         display: none;
     }
     #badgeNone{
-        display: inline-block; 
+        display: block; 
         float: left;
       
     }
